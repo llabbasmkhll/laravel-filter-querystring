@@ -3,7 +3,7 @@
 namespace Mehradsadeghi\FilterQueryString;
 
 use Illuminate\Pipeline\Pipeline;
-use Mehradsadeghi\FilterQueryString\Filters\{OrderbyClause, WhereClause, WhereInClause, WhereLikeClause};
+use Mehradsadeghi\FilterQueryString\Filters\{OrderbyClause, PivotClause, WhereClause, WhereInClause, WhereLikeClause};
 use Mehradsadeghi\FilterQueryString\Filters\ComparisonClauses\{GreaterOrEqualTo, GreaterThan, LessOrEqualTo, LessThan};
 use Mehradsadeghi\FilterQueryString\Filters\ComparisonClauses\Between\{Between, NotBetween};
 
@@ -22,6 +22,7 @@ trait FilterQueryString {
         'not_between' => NotBetween::class,
         'in' => WhereInClause::class,
         'like' => WhereLikeClause::class,
+        'pivot' => PivotClause::class,
     ];
 
     public function scopeFilter($query, ...$filters)
