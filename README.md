@@ -1,6 +1,6 @@
 # Laravel Filter Query String
 #### Filter your queries based on url query string parameters like a breeze.
-
+https://laravel.com/docs/8.x/eloquent#subquery-ordering
 *Compatible with Laravel **6.x** **7.x** **8.x***.
 
 ## Table of Content
